@@ -59,12 +59,14 @@ const Proyectos: React.FC = () => {
 
                                 <a
                                     href="/"
+                                    target='_black'
                                     className="mt-4 inline-block text-purple-400 hover:text-purple-300 transition-colors"
                                 >
                                     Ver más →
                                 </a>
                                 <a
                                     href="https://github.com/Luis2022cr/portfolio-web-luis"
+                                    target='_black'
                                     className="mt-4 inline-block text-cyan-400 hover:text-purple-300 transition-colors"
                                 >
                                     Github →
@@ -80,6 +82,7 @@ const Proyectos: React.FC = () => {
                             <div className='flex flex-col'>
                                 <a
                                     href="https://github.com/Luis2022cr/backend-tienda-online-profesional-v1"
+                                    target='_black'
                                     className="mt-4 inline-block text-cyan-400 hover:text-purple-300 transition-colors"
                                 >
                                     Github →
