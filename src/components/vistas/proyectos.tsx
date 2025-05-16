@@ -37,9 +37,9 @@ const Proyectos: React.FC = () => {
                         </div>
                         {/* Proyecto 2 */}
                         <div className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 className="text-xl font-bold text-green-400">Eccomerce de prueba</h3>
+                            <h3 className="text-xl font-bold text-green-400">Pagina Lavanderia Prueba</h3>
                             <p className="mt-2 text-gray-300">
-                                Eccomerce completo, con backend y frontend desplegado completo.
+                                Pagina de lavanderia, pagina version preliminar
                             </p>
                             <a
                                 href="https://artifys.online/"
