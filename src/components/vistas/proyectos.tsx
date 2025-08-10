@@ -1,6 +1,11 @@
-import {  Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import landingArtifys from "/src/assets/landingartifys.png";
+import paginalavanderia from "/src/assets/landingartifys.png";
+import portofolioweb from "/src/assets/portofolioweb.png";
+import backendeccomerce from "/src/assets/backendeccomerce.png";
+import kashy from "/src/assets/kashy.png";
 
 const Proyectos: React.FC = () => {
     const projects = [
@@ -8,7 +13,7 @@ const Proyectos: React.FC = () => {
             id: 1,
             name: "Landing Pages",
             description: "Landing pages para mi empresa de desarrollo.",
-            img: "/src/assets/landingartifys.png",
+            img: landingArtifys,
             githubLink: "https://github.com/Luis2022cr/Landing-artifys",
             liveLink: "https://landing-artifys.pages.dev/",
         },
@@ -16,7 +21,7 @@ const Proyectos: React.FC = () => {
             id: 2,
             name: "Pagina Lavanderia Prueba",
             description: "Pagina de lavanderia, pagina version preliminar, donde se gestiona pedidos, puntos y canges",
-            img: "/src/assets/paginalavanderia.png",
+            img: paginalavanderia,
             githubLink: "#",
             liveLink: "https://lavanderia-occiclean-app.pages.dev/",
         },
@@ -24,7 +29,7 @@ const Proyectos: React.FC = () => {
             id: 3,
             name: "Portfolio Web",
             description: "Mi portoflio web(Estamos actualmente).",
-            img: "/src/assets/portofolioweb.png",
+            img: portofolioweb,
             githubLink: "https://github.com/Luis2022cr/portfolio-web-luis",
             liveLink: "#",
         },
@@ -32,7 +37,7 @@ const Proyectos: React.FC = () => {
             id: 4,
             name: "Backend Eccomerce",
             description: "Api desarrolada en Express.js y Typecript.",
-            img: "/src/assets/backendeccomerce.png",
+            img: backendeccomerce,
             githubLink: "https://github.com/Luis2022cr/backend-tienda-online-profesional-v1",
             liveLink: "#",
         },
@@ -40,7 +45,7 @@ const Proyectos: React.FC = () => {
             id: 5,
             name: "Control Finanzas personales (Kashy)",
             description: "App personal de uso propio para manejo de mis finanzas de una forma mas privada y precisa segun mis necesidades ",
-            img: "/src/assets/kashy.png",
+            img: kashy,
             githubLink: "https://github.com/Luis2022cr/frontend-finanzas-personales",
             liveLink: "https://frontend-finanzas-personales.pages.dev/",
         },
@@ -63,7 +68,7 @@ const Proyectos: React.FC = () => {
                         >
                             <div className="relative w-full h-48 overflow-hidden">
                                 <img
-                                    src={project.img || "/placeholder.svg"}
+                                    src={project.img}
                                     alt={project.name}
                                     width={500}
                                     height={300}
