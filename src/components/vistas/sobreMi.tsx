@@ -1,61 +1,58 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const SobreMi: React.FC = () => {
   return (
-    <div className=" bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans gap-10">
+    <>
+          <section className="relative flex flex-col items-center justify-center text-center py-20 md:py-32 overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="z-10"
+            >
+              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
+                Hola, soy Luis Contreras
+              </h1>
+              <p className="text-xl md:text-2xl text-blue-200 mb-8">
+                Ingeniero de Sistemas | Desarrollador Full-Stack
+              </p>
+              <p className="max-w-3xl mx-auto text-lg text-blue-100 mb-10">
+                Apasionado por construir soluciones innovadoras y eficientes. Con experiencia en el desarrollo de aplicaciones robustas y escalables, transformo ideas complejas en experiencias digitales intuitivas y de alto rendimiento.
+              </p>
+              {/* <Link
+                to="projects"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 py-2 bg-blue-600 hover:bg-blue-700 text-white border border-blue-500 hover:border-blue-600 transition-all duration-300 group"
+              >
+                Ver Proyectos
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link> */}
+            </motion.div>
 
-       {/* Seccion Sobre Mi */}
-       <section id="about" className="py-32 bg-gray-800/50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="md:flex items-center">
-            {/* Foto */}
-            <div className="md:w-1/3 flex justify-center">
-              <img
-                src="https://pub-f664d02abdda4d49944c0443c9a67cd1.r2.dev/foto_perfil.webp"
-                alt="Luis Contreras"
-                className="rounded-full w-64 h-64 object-cover border-4 border-blue-500 shadow-lg"
+            {/* Futuristic background elements */}
+            <div className="absolute inset-0 z-0 opacity-20">
+              <motion.div
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+                className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl animate-blob"
+              />
+              <motion.div
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut", delay: 0.4 }}
+                className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-indigo-500 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"
+              />
+              <motion.div
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut", delay: 0.6 }}
+                className="absolute top-1/3 right-1/3 w-56 h-56 bg-cyan-500 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"
               />
             </div>
-            {/* Contenido */}
-            <div className="md:w-2/3 mt-8 md:mt-0 md:pl-12">
-              <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                Sobre Mí
-              </h2>
-              <p className="mt-4 text-gray-300">
-                Hola, soy Luis Contreras, Ingeniero en Sistemas.
-                Me especializo en crear soluciones digitales innovadoras y escalables para empresas
-                de todos los tamaños. he trabajado en proyectos
-                que van desde aplicaciones web simples, hasta proyectos mas complejos.
-              </p>
-              <div className="mt-6">
-                <h3 className="text-xl font-semibold text-gray-200">Habilidades</h3>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  <span className="px-4 py-2 bg-blue-500/10 text-blue-400 rounded-full">
-                    React
-                  </span>
-                  <span className="px-4 py-2 bg-green-500/10 text-green-400 rounded-full">
-                    Node.js
-                  </span>
-                  <span className="px-4 py-2 bg-purple-500/10 text-purple-400 rounded-full">
-                    TypeScript
-                  </span>
-                  <span className="px-4 py-2 bg-gray-500/10 text-gray-400 rounded-full">
-                    Express.js
-                  </span>
-                  <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-full">
-                    Tailwind CSS
-                  </span>
-                  <span className="px-4 py-2 bg-red-500/10 text-red-400 rounded-full">
-                    Diseño UI/UX
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-    </div>
+    </>
   );
 };
 
